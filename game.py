@@ -10,7 +10,7 @@ computer = str(game[random.randint(0, 2)])
 player = True
 
 # used a while loop to keep it running while the condition is True, listing all the possible outcomes.
-while player == True:
+while True:
     # prompts the user to input either R, P or S
     player = input("Rock, Paper, Scissors? Input R, P or S ")
     if player == 'R':
@@ -42,12 +42,6 @@ while player == True:
     else:  # this prints if the input is not R, P or S
         print("That's not a valid input. Please enter again")
 
-
-# this is to play again but not complete yet
-#     play_again = input('Play again? (y/n): ')
-#     if play_again != 'y':
-#         player == False
-#     else:
-#         break
-
-# could we have converted the user input?
+    play_again = input('Play again? (y/n): ')
+    if play_again != 'y':
+        break
