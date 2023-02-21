@@ -4,7 +4,7 @@ import random  # imported the random module to use the randint method
 game = ['R', 'P', 'S']
 
 # assigning a single item of the list and converting it into a string
-computer = game[random.randint(0, 2)]
+# computer = game[random.randint(0, 2)]
 
 # Boolean value, not assigning True to a variable
 player = True
@@ -51,3 +51,4 @@ while player:
     play_again = input('Play again? (y/n): ')
     if play_again != 'y':
         break
+
