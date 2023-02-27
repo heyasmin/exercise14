@@ -1,7 +1,6 @@
 import random  # imported the random module to use the randint method
 
-# issues to fix: convert the values with a dictionary!!!
-# so it will print the player and computer choices in 2 lines of code
+# this version has the game with functions
 
 # assigning rock, paper, scissors to game variable in a list
 game = ['R', 'P', 'S']

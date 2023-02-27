@@ -1,5 +1,7 @@
 import random  # imported the random module to use the randint method
 
+# this version has the game with just a while loop and conditional statements
+
 # assigning rock, paper, scissors to game variable in a list
 game = ['R', 'P', 'S']
 

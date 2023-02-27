@@ -1,8 +1,7 @@
 import random  # imported the random module to use the randint method
 # import game_functions
 
-# issues to fix: convert the values with a dictionary!!!
-# so it will print the player and computer choices in 2 lines of code
+# this version is the same as game2.py but has a score too
 
 # assigning rock, paper, scissors to game variable in a list
 game = ['R', 'P', 'S']
@@ -28,10 +27,10 @@ comp_score = 0
 
 # Keeps asking the player for input until they enter "R", "P", or "S" only. Invalid if they don't.
 def player_choice():
-    player = input("Rock, Paper, Scissors? Input R, P or S: ")
+    player = input("Rock, Paper, Scissors? Input R, P or S: ").upper()
     while player != 'R' and player != 'P' and player != 'S':  # this should be or, but it doesn't work, so I put and
         print(f"That's not a valid input. Please input again.")
-        player = input("Rock, Paper, Scissors? Input R, P or S: ")
+        player = input("Rock, Paper, Scissors? Input R, P or S: ").upper()
     return player
     # if player == 'R':
     #     player == 'Rock'
@@ -106,7 +105,7 @@ while player:
     else:
         comp_score += 1
         print(f"You lose! Computer: {comp_score}, You: {player_score}")
-    play_again = input('Play again? (y/n): ')
+    play_again = input('Play again? (y/n): ').lower()
     if play_again != 'y':
         break
 
