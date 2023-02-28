@@ -1,5 +1,4 @@
-# this version is the same as game3.py but has the game values in a dictionary
-
+# this version is the same as game3.py but need to have the game values in a dictionary
 import game_functions
 
 player = True
@@ -9,27 +8,11 @@ comp_score = 0
 
 # used a while loop to keep it running while the condition is True, listing all the possible outcomes.
 while player:
-    # sets the score for both to 0
 
-    # this calls the player_choice function
     player = game_functions.player_choice()
-    # this calls the comp_choice function
     computer = game_functions.comp_choice()
 
-    # prints the choices
-    if player == 'R':
-        print('You played Rock.')
-    if player == 'P':
-        print('You played Paper.')
-    if player == 'S':
-        print('You played Scissors.')
-
-    if computer == 'R':
-        print('Computer played Rock.')
-    if computer == 'P':
-        print('Computer played Paper.')
-    if computer == 'S':
-        print('Computer played Scissors.')
+    print(f'You played {player} \nComputer played {computer}')
 
     if game_functions.game_tie(player, computer):
         player_score += 1

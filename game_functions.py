@@ -1,12 +1,15 @@
 # game functions
 import random
 
-game = ['R', 'P', 'S']
+game = ('R', 'P', 'S')
+# game_dict = {'R': 'Rock', 'P': 'Paper', 'S': 'Scissors'}
+# mydict = {'letters': ['R', 'P', 'S'],
+#           'words': ['Rock', 'Paper', 'Scissors']}
 
 
 def player_choice():
     player = input("Rock, Paper, Scissors? Input R, P or S: ").upper()
-    while player != 'R' and player != 'P' and player != 'S':  # this should be or, but it doesn't work, so I put and
+    while player not in game:
         print(f"That's not a valid input. Please input again.")
         player = input("Rock, Paper, Scissors? Input R, P or S: ").upper()
     return player

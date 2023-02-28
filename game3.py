@@ -16,6 +16,8 @@ while player:
     # this calls the comp_choice function
     computer = game_functions.comp_choice()
 
+    # print(f'You played {player} \nComputer played {computer}')
+
     # prints the choices
     if player == 'R':
         print('You played Rock.')
@@ -44,6 +46,7 @@ while player:
         print(f"You lose! Computer: {comp_score}, You: {player_score}")
     play_again = input('Play again? (y/n): ').lower()
     if play_again != 'y':
+        print('Thanks for playing! Bye')
         break
 
 
